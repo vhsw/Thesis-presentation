@@ -1,0 +1,421 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Исследование смыкания нанопроволок GaN под воздействием пучка электронов</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/night.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!--title-->
+			<section>
+				<h3 style="text-transform: none;">ИССЛЕДОВАНИЕ СМЫКАНИЯ НАНОПРОВОЛОК GaN ПОД ВОЗДЕЙСТВИЕМ ПУЧКА ЭЛЕКТРОНОВ</h3>
+				<small>Соискатель: Алексей Дубров, группа ОФ-21</small>
+				</br>
+				<small>Научный руководитель: д.ф.-м.н., проф. Н.И. Боргардт</small>
+				</br>
+				<small>Консультант: к.ф.-м.н. Р.Л. Волков</small>
+			</section>
+			<!--definition-->
+			<section>
+				<p style="text-align: left; font-size: 75%">
+					<strong>Нанопроволока</strong> — одномерный наноматериал, длина которого значительно превосходит остальные измерения, которые,
+					в свою очередь, не превышают нескольких десятков нанометров.</p>
+				<img data-src="../Dissertation/images/nanowire_beautiful.png" width="800">
+			</section>
+			<!--actual-->
+			<section>
+				<section>
+					<h2>Актуальность</h2>
+					<canvas class="stretch" data-chart="bar">
+						<!-- 
+				{
+				 "data": {
+				  "labels": [
+				  "2000","2001","2002","2003","2004","2005",
+				  "2006","2007","2008","2009","2010","2011",
+				  "2012","2013","2014","2015","2016","2017","2018*"],
+				  "datasets": [
+				   {
+					"data":[
+					1060, 1570, 2290, 3490, 4950, 6820, 
+					9210, 11100, 13500, 12900, 14900, 17900,
+					20600, 23400, 27300, 28500, 30400, 26800, 32000],
+					"label":"","backgroundColor":"rgba(20,220,220,.8)"
+				   }
+				  ]
+				 }, 
+				 "options": { "responsive": "true", 
+							  "yAxes": [{
+									"ticks": {"beginAtZero": "true" }
+								}]
+							}
+				}
+				-->
+					</canvas>
+					<small>Количество публикаций по годам</small>
+				</section>
+				<section>
+					<h2>Актуальность</h2>
+					<p>Область применения нанопроволок из GaN определяется их свойствами</p>
+					<ul>
+						<li>Большая площадь поверхности</li>
+						<li>Отсутстие дислокаций в НП</li>
+						<li>GaN — прямозонный полупроводник</li>
+					</ul>
+				</section>
+				<section>
+					<h3>Область применения НП</h3>
+					<p>Сверхъяркие светодиоды, солнечные панели, батареи, транзисторы с окружающим затвором</p>
+					<p>
+						<img data-src="../Dissertation/images/led_traffic_lights.jpg" width="300">
+						<img data-src="../Dissertation/images/solar_cell.jpg" width="300">
+						<img data-src="../Dissertation/images/blue_led.jpg" width="300">
+					</p>
+				</section>
+				<section>
+					<h2>Нобелевская премия</h2>
+					<p>В 2014 году за создание синих светодиодов Исаму Акасаки, Хироси Амано и Сюдзи Накамуре присуждена Нобелевская премия
+						по физике</p>
+					<p>
+						<img data-src="../Dissertation/images/Akasaki_Isamu.jpg" width="200">
+						<img data-src="../Dissertation/images/amano.jpg" width="200">
+						<img data-src="../Dissertation/images/nakamura.jpg" width="200">
+					</p>
+				</section>
+			</section>
+			<!--aim-->
+			<section>
+				<section>
+					<h3>Цель</h3>
+					Исследовать процесс смыкания нанопроволок из GaN под воздействием пучка электронов в РЭМ
+				</section>
+				<section>
+					<h3>Поставленные задачи</h3>
+					<ol>
+						<li>Изучить литературу по данной теме</li>
+						<li>Исследовать образцы нанопроволок в РЭМ</li>
+						<li>Запечатлеть процесс смыкания нанопроволок</li>
+						<li>Обработать полученные снимки и видеофайлы</li>
+						<li>Интерпретировать полученные данные</li>
+					</ol>
+				</section>
+				<section>
+					<h4>Положения, выносимые на защиту</h4>
+					<ol style="font-size: 80%">
+						<li>Взаимодействие между нанопроволоками происходит только в момент нахождения электронного пучка над нанопроволокой</li>
+						<li>Заряд, индуцированный электронным пучком, не накапливается в нано­проволоках, а стекает за характерное время менее
+							100 мкс
+						</li>
+						<li>Существующие модели взаимодействия нанопроволок из полупро­водниковых материалов, учитывающие геометрические размеры
+							на­нопроволок и модуль упругости материала, из которого изготовлена нанопроволока, применимы для описания процесса
+							взаимодействия на­ нанопроволок из нитрида галлия</li>
+					</ol>
+				</section>
+			</section>
+
+			<!--specimens-->
+			<section>
+				<section>
+					<h3>Образцы</h3>
+					<p style="text-align:  justify; font-size: 75%"> Нанопроволоки из GaN длиной 650, 985 и 2450&nbsp;нм, выращенные на Si (111) без использования катализатора методом МПЭ.
+						Подложки предварительно очищены 5% HF и отожжены в вакууме в течении 30 минут для удаления всевозможных загрязнений.
+						На подложках был сформирован слой SiN для улучшния адгезии, после чего были выращены нанопроволоки. Образцы предоставлены
+						институтом твердотельной электроники имени Пауля-Друде, Германия.
+					</p>
+
+				</section>
+				<section>
+					<h3>Образцы</h3>
+					<img data-src="../Dissertation/images/nw_top.png" width="450">
+					<img data-src="../Dissertation/images/nw_side.png" width="450">
+					<small>Вид сверху и сбоку</small>
+				</section>
+			</section>
+			<!--bind-video-->
+			<section>
+				<h3>Процесс смыкания нанопроволок</h3>
+				<video data-autoplay loop style="width: 700px">
+					<source data-src="../Dissertation/images/binding.mp4" type="video/mp4" />
+				</video>
+			</section>
+			<section>
+				<section>
+					<h3>Модель смыкания НП</h3>
+					<img data-src="../Dissertation/images/nw_bend_schema_inv.png" height="350">
+					<img data-src="../Dissertation/images/nw_potential.jpg" height="350">
+					<small>Модель смыкания нанопроволок и распределение потенциала в нанопроволоке</small>
+				</section>
+				<section style="font-size: 75%">
+					<h3>Модель смыкания НП</h3>
+					<p>\[\begin{aligned} W_{el} &amp;= \frac{\rho^2 I_E^2 L^3 \epsilon_0}{2 h^3 \pi r^4} \int_{0}^{h}\frac{y^2}{\ln \left(
+						\frac{d}{r} - \frac{2 \delta}{h r} y\right)} dy,\\ F_{el} &amp;=\frac{\partial W_{el} }{\partial \delta},\\ W_{b} &amp;=
+						\int_{0}^{L} \frac{M^2}{2 E I} dy = \frac{3\pi}{4}\frac{Er^4}{L^3}\delta^2,\\ F_{b} &amp;= \frac{\partial W_{b} }{\partial
+						\delta} = \frac{3\pi}{2}\frac{Er^4}{L^3}\delta. \end{aligned} \]</p>
+					<p>$I_E$ &mdash; ток пучка, $M$ &mdash; скручивающий момент, $E$ &mdash; модуль Юнга, $I = \frac{\pi r^4 }{4}$ &mdash;
+						момент инерции круглой балки радиуса $r$</p>
+				</section>
+				<section>
+					<h3>Модель смыкания НП</h3>
+					<p style="text-align: left">
+						Максимальное смещение $\delta_{MAX}$ достигается при $F_{el} = F_{b}$, при этом
+					</p>
+					<ul>
+						<li>Если $\delta_{MAX} = \frac{d}{2}$, НП смыкаются и остаются соедененными под действем силы Ван-дер-Ваальса</li>
+						<li>$\delta_{MAX} &lt; \frac{d}{2}$ НП сближаются на расстояние $\delta_{MAX}$ и расходятся</li>
+					</ul>
+				</section>
+			</section>
+			<section>
+				<h3>Схема проведения экспериментов</h3>
+				<ul>
+					<li>Контрольный снимок, ток пучка 25-100 пА, время остановки 300 нс</li>
+					<li>Интенсивное воздействие на образец, ток до 1,6 нА, время остановки до 60 с</li>
+					<li>Итоговый снимок, ток пучка 25-100 пА, время остановки 300 нс</li>
+				</ul>
+			</section>
+			<!--processing-->
+			<section>
+				<section>
+					<h3>Фильтр Гаусса</h3>
+					<img style="float: right" data-src="../Dissertation/images/gauss_filter_schema.jpg" width="450">
+					<p style="text-align: left; font-size: 75%">
+						Исходное изображение сварачивается с матрицей, элементы которой рассчитываются по формуле: \[g(x,y)={\frac {1}{2\pi \sigma
+						^{2}}}\cdot e^{{-{\frac {x^{2}+y^{2}}{2\sigma ^{2}}}}},\] где x, y&nbsp;&mdash;&nbsp;расстояние от центра, $\sigma$&nbsp;&mdash;&nbsp;радиус
+						размытия
+					</p>
+				</section>
+				<section>
+					<h3>Обработка изображений</h3>
+					<p>
+						Параметр $\sigma$ = 5&nbsp;px
+					</p>
+					<img data-src="../Dissertation/images/gauss_before.png" width="400">
+					<img data-src="../Dissertation/images/gauss_after.png" width="400">
+					<small>Фильтр Гаусса</small>
+				</section>
+				<section>
+					<h3>Метод водоразделов</h3>
+					<img data-src="../Dissertation/images/gauss_after	.png" width="300">
+					<img data-src="../Dissertation/images/watershared_sobel.png" width="300">
+					<img data-src="../Dissertation/images/watershared_schema_inv.jpg" width="800">
+				</section>
+				<section>
+					<h3>Обработка изображений</h3>
+					<img data-src="../Dissertation/images/gauss_after.png" width="450">
+					<img data-src="../Dissertation/images/watershared_after.png" width="450">
+					<small>Сегметация методом водоразделов</small>
+				</section>
+			</section>
+			<!--graphs-->
+			<section>
+				<h4>Доля соединившихся НП, %</h4>
+				<p style="font-size: 75%">\[F_{el} \sim \frac{1}{r^2}\]</p>
+				<canvas class="stretch" data-chart="bar" width="800" height="350">
+					<!-- 
+{
+ "data": {
+  "labels": ["2","4","6","8","10","12","14","16","18","20"],
+  "datasets": [
+   {
+    "data":[99,55.8,21.1,10.7,15.3,3.1,7.9,2.0,1.1,0.7],
+    "label":"","backgroundColor":"rgba(20,220,220,.8)"
+   },
+   {"data":[100,25,11.11,6.25,4,2.78,2.04,1.56,1.23,1],
+			"type": "line"
+		   }
+  ]
+ }, 
+ "options": { "responsive": "true"}
+}
+-->
+				</canvas>
+				<small>Расстояние, нм</small>
+			</section>
+
+			<section>
+				<h4>Доля соединившихся НП, %</h4>
+				<p style="font-size: 70%">\[F_{b} \sim \frac{1}{S^2}\]</p>
+				<canvas class="stretch" data-chart="bar" width="800" height="350">
+					<!-- 
+	{
+	 "data": {
+	  "labels": ["400", "800", "1200", "1600", "2000", "2400", "2800", "3200"],
+	  "datasets": [
+	   {
+		"data":[98.3,80.7,71.8,40.2,12.1,9.6,2.5,1.9],
+		"label":"","backgroundColor":"rgba(20,220,220,.8)"
+	   }
+	  ]
+	 }, 
+	 "options": { "responsive": "true"}
+	}
+	-->
+				</canvas>
+				<p style="font-size: 60%">Площадь НП, нм
+					<sup>2</sup>
+				</p>
+			</section>
+
+			<section>
+				<h4>Доля соединившихся НП, %</h4>
+				<canvas class="stretch" data-chart="bar" width="800" height="350">
+					<!-- 
+		{
+		 "data": {
+		  "labels": ["0,1-1","1-2","2-3","3-4"],
+		  "datasets": [
+		   {
+			"data":[26.1, 20.1, 28.7, 25.1, 0],
+			"label":"","backgroundColor":"rgba(20,220,220,.8)"}
+		  ]
+		 }, 
+		 "options": { "responsive": "true", 
+		              "yAxes": [{
+							"ticks": {"beginAtZero": "true" }
+						}]
+					}
+		}
+		-->
+				</canvas>
+				<small>Расстояние от центра, мкм</small>
+				<p>
+					Время стекания заряда $t &lt; 100 \text{ мкс}$
+				</p>
+			</section>
+			<section>
+				<h3>Выводы</h3>
+				<ol style="font-size: 75%">
+					<li>При помощи РЭМ исследованы об­разцы НП из GaN</li>
+					<li>Cнимки были обработаны при помощи методов математической фильтрации цифровых изображений</li>
+					<li>Получены гисто­граммы зависимости доли соединившихся НП от длины и площади сечения НП</li>
+					<li>Произведена оценка применимости моделей взаимодействия нанопро­волок, описанных в литературе к использованным в исследовании образцам
+						НП из нитрида галлия</li>
+				</ol>
+			</section>
+			<!--fin-->
+			<section data-background-video="../Dissertation/images/zoom.mp4" data-background-color="#000">
+				<h3 style="text-shadow: 0px 0px 1em #000">Спасибо за внимание!</h3>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			slideNumber: true,
+			controls: false,
+			history: true,
+			mouseWheel: false,
+			math: {
+
+				config: 'TeX-AMS_HTML-full' // See http://docs.mathjax.org/en/latest/config-files.html
+			},
+			chart: {
+				defaults: {
+					global: {
+						title: {
+							fontColor: "#FFF"
+						},
+						legend: {
+							display: false,
+							labels: {
+								display: "#FFF"
+							},
+						},
+					},
+					scale: {
+						scaleLabel: {
+							fontColor: "#FFF"
+						},
+						gridLines: {
+							color: "#FFF",
+							zeroLineColor: "#FFF"
+						},
+						ticks: {
+							fontColor: "#FFF"
+						},
+					}
+				},
+				line: {
+					borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"],
+					"borderDash": [
+						[5, 10],
+						[0, 0]
+					]
+				},
+				bar: {
+					backgroundColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"]
+				},
+				pie: {
+					backgroundColor: [
+						["rgba(0,0,0,.8)", "rgba(220,20,20,.8)", "rgba(20,220,20,.8)", "rgba(220,220,20,.8)", "rgba(20,20,220,.8)"]
+					]
+				},
+				radar: {
+					borderColor: ["rgba(20,220,220,.8)", "rgba(220,120,120,.8)", "rgba(20,120,220,.8)"]
+				},
+			},
+			dependencies: [
+				// Zoom in and out with Alt+click
+				{
+					src: 'plugin/zoom-js/zoom.js',
+					async: true
+				},
+				{
+					src: 'plugin/math/math.js',
+					async: true
+				},
+				{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				},
+				{
+					src: 'plugin/chart/Chart.min.js'
+				},
+				{
+					src: 'plugin/chart/csv2chart.js'
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
